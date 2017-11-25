@@ -1,4 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<h1>
-{{title}}
-</h1>
+<div class="container">
+	<h1>
+		{{ title }}
+	</h1>
+	<img [src]="dogGif" [alt]="dogGifAlt"/>
+	<dog-details name="Odie"></dog-details>
+	<dog-details name="Jim"></dog-details>
+	<dog-details [name]="dog1.name" [color]="dog1.color" (nameChange)="changeDog1($event)" (bark)="doBark(dog1.name)"></dog-details>
+	<dog-details [name]="dog2.name" [color]="dog2.color" (bark)="doBark(dog2.name)"></dog-details>
+</div>

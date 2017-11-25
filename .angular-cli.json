@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_module/materialize-css/dist/materialize.min.css"
+        "../node_modules/materialize-css/dist/css/materialize.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
