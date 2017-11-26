@@ -1,6 +1,24 @@
 <div class="container">
-	<dog-details [name]="dog1.name" [color]="dog1.color" (nameChange)="changeDog1($event)" (bark)="doBark(dog1.name)"></dog-details>
-   <dog-details [name]="dog2.name" [color]="dog2.color" (nameChange)="changeDog2($event)" (bark)="doBark(dog2.name)"></dog-details>
-   <dog-details [name]="dog3.name" [color]="dog3.color" (nameChange)="changeDog3($event)" (bark)="doBark(dog3.name)"></dog-details>
-   <dog-details [name]="dog4.name" [color]="dog4.color" (nameChange)="changeDog4($event)" (bark)="doBark(dog4.name)"></dog-details>
+
+	<dog-details
+		[(name)]="dog1.name"
+		[(color)]="dog1.color"
+		(bark)="doBark(dog1.name)"></dog-details>
+		<!--(nameChange)="changeDog1($event)"-->
+
+   <dog-details
+   	[(name)]="dog2.name"
+   	[(color)]="dog2.color"
+   	(bark)="doBark(dog2.name)"></dog-details>
+
+   <dog-details
+   	[(name)]="dog3.name"
+   	[(color)]="dog3.color"
+   	(bark)="doBark(dog3.name)"></dog-details>
+
+   <dog-details
+   	[(name)]="dog4.name"
+   	[(color)]="dog4.color"
+   	(bark)="doBark(dog4.name)"></dog-details>
+
 </div>

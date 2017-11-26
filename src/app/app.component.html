@@ -1,10 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
 	<h1>
-		{{ title }}
+		{{ name }}
 	</h1>
+	<input type="text" placeholder="title" [(ngModel)]="name"/>
+
 	<img [src]="dogGif" [alt]="dogGifAlt"/>
 	<dog-list></dog-list>
+
+
+
 	<!--<dog-details [name]="dog1.name" [color]="dog1.color" (nameChange)="changeDog1($event)" (bark)="doBark(dog1.name)"></dog-details>-->
 	<!--<dog-details [name]="dog2.name" [color]="dog2.color" (nameChange)="changeDog2($event)" (bark)="doBark(dog2.name)"></dog-details>-->
 	<!--<dog-details [name]="dog3.name" [color]="dog3.color" (nameChange)="changeDog3($event)" (bark)="doBark(dog3.name)"></dog-details>-->
