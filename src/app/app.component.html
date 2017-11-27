@@ -1,16 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
-	<h1 uppercase>
+	<h1>
 		{{ name }}
 	</h1>
 
-	<h2 *ifnot="name">No name yet...</h2>
+	<h2>No name yet...</h2>
 
 	<input type="text" placeholder="title" [(ngModel)]="name"/>
-
-	<img [src]="dogGif" [alt]="dogGifAlt"/>
 	<dog-list></dog-list>
 
+	<img [src]="dogGif" [alt]="dogGifAlt"/>
 
 
 	<!--<dog-details [name]="dog1.name" [color]="dog1.color" (nameChange)="changeDog1($event)" (bark)="doBark(dog1.name)"></dog-details>-->

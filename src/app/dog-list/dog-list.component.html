@@ -1,12 +1,27 @@
 <div class="container">
 
-	<dog-details
+	<ng-template ngFor let-dog [ngForOf]="dogs">
+
+		<dog-details *ngIf="!dog.leash" [(name)]="dog.name" [(color)]="dog.color"></dog-details>
+	</ng-template>
+
+</div>
+
+	<!--<dog-details *ngFor="let dog of dogs" [(name)]="dog.name" [(color)]="dog.color"></dog-details>-->
+	<!--<ul>
+		<li *ngFor="let dog of dogs">
+			{{dog.name}}
+		</li>
+	</ul>-->
+
+	<!--<dog-details
 		[(name)]="dog1.name"
 		[(color)]="dog1.color"
-		(bark)="doBark(dog1.name)"></dog-details>
+		(bark)="doBark(dog1.name)"></dog-details>-->
 		<!--(nameChange)="changeDog1($event)"-->
 
-   <dog-details
+
+<!--<dog-details
    	[(name)]="dog2.name"
    	[(color)]="dog2.color"
    	(bark)="doBark(dog2.name)"></dog-details>
@@ -19,6 +34,4 @@
    <dog-details
    	[(name)]="dog4.name"
    	[(color)]="dog4.color"
-   	(bark)="doBark(dog4.name)"></dog-details>
-
-</div>
+   	(bark)="doBark(dog4.name)"></dog-details>-->
