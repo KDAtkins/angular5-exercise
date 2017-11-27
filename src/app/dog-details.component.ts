@@ -20,9 +20,9 @@ export class DogDetailsComponent {
    colorStyles = {
       color: this.goGreen(),
       fontSize: '2em'
-   }
-   goGreen(){
-      return 'teal'
+   };
+   goGreen() {
+      return 'teal';
    }
    handleClick() {
       this.bark.emit({});
