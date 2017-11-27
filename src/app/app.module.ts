@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AppComponent, UpperCaseDirective } from './app.component';
+import { AppComponent, UpperCaseDirective, IfNotDirective } from './app.component';
 import { DogDetailsComponent } from './dog-details.component';
 import { DogListComponent } from './dog-list/dog-list.component';
 
@@ -10,7 +10,8 @@ import { DogListComponent } from './dog-list/dog-list.component';
     AppComponent,
     DogDetailsComponent,
     DogListComponent,
-    UpperCaseDirective
+    UpperCaseDirective,
+    IfNotDirective
   ],
   imports: [
     BrowserModule,

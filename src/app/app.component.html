@@ -3,6 +3,9 @@
 	<h1 uppercase>
 		{{ name }}
 	</h1>
+
+	<h2 *ifnot="name">No name yet...</h2>
+
 	<input type="text" placeholder="title" [(ngModel)]="name"/>
 
 	<img [src]="dogGif" [alt]="dogGifAlt"/>
