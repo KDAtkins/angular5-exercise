@@ -1,0 +1,4 @@
+<h2>{{ name }} - <span [ngStyle]="colorStyles">{{ color }}</span> </h2>
+<input (input) = "handleNameChange($event)" type="text" placeholder="Name"/>
+<input (input) = "handleColorChange($event)" type="text" placeholder="Color"/>
+<button class = "btn btn-waves" (click) = "handleClick()">Bark</button>
